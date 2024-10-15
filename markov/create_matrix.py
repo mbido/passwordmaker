@@ -61,15 +61,15 @@ if __name__ == "__main__":
   #   'll': {'o': 1}
   # }
   matrix = {}
-  max_char = 1
-  alphabet = "abcdefghijklmnopqrstuvwxyz éèàùçâêîôûëïüÿ"
-  text = get_text("../data/1984.txt", alphabet)
+  max_char = 5
+  alphabet = "abcdefghijklmnopqrstuvwxyzéèàùçâêîôûëïüÿ"
+  text = get_text("../data/1984-fr.txt", alphabet)
   
   for i in range(1, max_char + 1):
     print(f"Initializing for {i} characters")
     init_for_n_char(matrix, i, text)
   # print(matrix)
-  normalize(matrix)
+  normalize(matrix, 0.00)
   # print(matrix)
   
   save_normalized_matrix(matrix, "matrix.json")

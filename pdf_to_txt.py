@@ -17,4 +17,4 @@ def pdf_to_text(pdf_file, txt_file):
         text.write(page.extract_text())
 
 # Exemple d'utilisation
-pdf_to_text('data/1984.pdf', 'data/1984.txt')
+pdf_to_text('data/1984-fr.pdf', 'data/1984-fr.txt')
