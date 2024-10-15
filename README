@@ -1,0 +1,8 @@
+# Password maker
+This simple yet fun little project creates a password using various techniques.
+
+## Using Markov chains
+This technique uses a Markov chain to generate the password.
+We analyze a file containing a large amount of text and create the matrix of probabilities of each character following another character.
+Then we generate the password by starting with a random character and then choosing the next character based on the probabilities in the matrix.
+Using this method we can generate passwords that look like real words. Even more interesting, wa can choose the language of the text file to generate passwords in that language.
